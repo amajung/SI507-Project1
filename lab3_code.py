@@ -104,31 +104,31 @@ class Pound(Currency):
 ## The code provided below, when un-commented, should work when your class definitions are complete. Of course, you should also submit to the autograder to see your test results.
 
 ### PROVIDED CODE you can try:
-dollar = Dollar(1)
-pound = Pound(1)
-yuan = Yuan(1)
+# dollar = Dollar(1)
+# # pound = Pound(1)
+# yuan = Yuan(1)
 
 
-print(yuan.conversion(Pound))
+# print(yuan.conversion(Pound))
 # 0.5333333333333333 Pound
 #
-print(pound.conversion(Pound))
+# print(pound.conversion(Pound))
 # 1.0 Pound
 #
-print(pound.conversion(Dollar))
+# print(pound.conversion(Dollar))
 # 0.75 Dollar
 #
-print(dollar)
+# print(dollar)
 # 1 Dollar
 #
-two_dollars = Dollar(2)
-print(two_dollars)
+# two_dollars = Dollar(2)
+# print(two_dollars)
 # 2 Dollars
 
 # More tests
-print(dollar.rate)
-print(pound.rate)
-print(yuan.rate)
+# print(dollar.rate)
+# print(pound.rate)
+# print(yuan.rate)
 
 ## [STEP 2]
 # Define code for a class Bank, as follows.
@@ -181,24 +181,24 @@ class Bank:
 
 #### PROVIDED CODE:
 ## Creating instances
-jpMorgan = Bank("J.P.Morgan", Dollar, 1)
-barclays = Bank("Barclays", Pound, 1)
-bank_of_china = Bank("Bank of China", Yuan, 1)
+# jpMorgan = Bank("J.P.Morgan", Dollar, 1)
+# barclays = Bank("Barclays", Pound, 1)
+# bank_of_china = Bank("Bank of China", Yuan, 1)
 #
 #
-print(jpMorgan.current_account.value)
+# print(jpMorgan.current_account.value)
 # 1
 #
-print(jpMorgan.deposit(dollar))
+# print(jpMorgan.deposit(dollar))
 # # should show: 'successful deposit'
 #
-print(jpMorgan.current_account.value)
+# print(jpMorgan.current_account.value)
 # # should show: 2
 #
-print(jpMorgan.deposit(pound))
+# print(jpMorgan.deposit(pound))
 # # should show: 'ERROR: cannot deposit that currency.'
 
 # More tests
-print(jpMorgan.unit)
-print(jpMorgan.current_account)
-print(jpMorgan)
+# print(jpMorgan.unit)
+# print(jpMorgan.current_account)
+# print(jpMorgan)
